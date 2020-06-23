@@ -86,6 +86,7 @@ AppRegistry.registerComponent('example', () => example);
 | onSketchSaved | `function` | An optional function which accpets 2 arguments `success` and `path`. If `success` is true, image is saved successfully and the saved image path might be in second argument. In Android, image path will always be returned. In iOS, image is saved to camera roll or file system, path will be set to null or image location respectively. |
 | onPathsChange | `function` | An optional function which accpets 1 argument `pathsCount`, which indicates the number of paths. Useful for UI controls. (Thanks to toblerpwn) |
 | user | `string` | An identifier to identify who draws the path. Useful when undo between two users |
+| paths | `array` | Paths of sketchs |
 | touchEnabled | `bool` | If false, disable touching. Default is true.  |
 | localSourceImage | `object` | Require an object (see [below](#objects)) which consists of `filename`, `directory`(optional) and `mode`(optional). If set, the image will be loaded and display as a background in canvas. (Thanks to diego-caceres-galvan))([Here](#background-image) for details) |
 | permissionDialogTitle | `string` | Android Only: Provide a Dialog Title for the Image Saving PermissionDialog. Defaults to empty string if not set |
@@ -166,6 +167,21 @@ export default class example extends Component {
                 imageType: 'png'
               }
             }}
+            paths={
+              {
+                "drawer": null,
+                "path": {
+                  "color": "#000000FF", 
+                  "data": ["348.73,193.82", "350.73,193.82"], 
+                  "id": parseInt(Math.random() * 100000000), 
+                  "width": 5
+                },
+                "size": {
+                  "height": 612.727294921875,
+                  "width": 393.0909118652344
+                }
+              }
+            }
           />
         </View>
       </View>
