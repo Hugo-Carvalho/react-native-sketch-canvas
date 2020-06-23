@@ -26,11 +26,11 @@ Features
 -------------
 Install from `npm` (only support RN >= 0.40)
 ```bash
-npm install @terrylinla/react-native-sketch-canvas --save
+npm install https://github.com/Hugo-Carvalho/react-native-sketch-canvas.git --save
 ```
 Link native code
 ```bash
-react-native link @terrylinla/react-native-sketch-canvas
+react-native link https://github.com/Hugo-Carvalho/react-native-sketch-canvas.git
 ```
 
 ## Usage
@@ -223,6 +223,7 @@ AppRegistry.registerComponent('example', () => example);
 | onUndoPressed | `function` | An optional function that accepts a argument `id` (the deleted id of path) and is called when user taps "undo" |
 | onClearPressed | `function` | An optional function called when user taps clearComponent |
 | user | `string` | See [above](#properties) |
+| paths | `array` | An optional array of paths |
 | closeComponent | `component` | An optional component for closing |
 | eraseComponent | `component` | An optional component for eraser |
 | undoComponent | `component` | An optional component for undoing |
