@@ -2,6 +2,7 @@ react-native-sketch-canvas
 ===================
 
 Adapted from https://github.com/terrylinla/react-native-sketch-canvas
+Added a property to incorporate preloaded sketch paths
 
 A React Native component for drawing by touching on both iOS and Android.
 
